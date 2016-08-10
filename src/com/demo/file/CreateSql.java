@@ -22,7 +22,7 @@ public class CreateSql {
 		HSSFWorkbook hssfworkbook = new HSSFWorkbook(is);
 		// sheet个数 hssfworkbook.getNumberOfSheets()
 		// 遍历所有的sheet表
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i <  hssfworkbook.getNumberOfSheets(); i++) {
 			// 遍历sheet表
 			hssfsheet = hssfworkbook.getSheetAt(i);
 			// 获得sheet表的名字
